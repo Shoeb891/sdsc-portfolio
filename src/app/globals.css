@@ -1,33 +1,60 @@
+/* Add your custom Tailwind CSS styles here */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.timeline_bar {
+    scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.scroll_btn:focus {
+    border: none;
+    outline: none;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.timeline_bar::-webkit-scrollbar {
+    display: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.timeline_bar {
+    scrollbar-width: none;
+}
+
+.timeline-bar:nth-child(odd) {
+    width: 36rem;
+}
+
+.timeline-bar:nth-child(even) {
+    width: 26.4rem;
+}
+
+@media screen and (max-width: 576px) {
+    .img1 {
+        width: 12.78rem;
+        height: 10.326rem;
+        margin-top: 3.3rem;
+    }
+
+    .img2 {
+        width: 13.18rem;
+        height: 8.92rem;
+        margin-top: 11.5rem;
+        margin-left: 0.7rem;
+    }
+
+    .img3 {
+        width: 14.213rem;
+        height: 8.99rem;
+    }
+}
+.banner {
+  height: 80vh;
+}
+
+.banner-footer {
+  height: 20vh;
+}
+
+.text-justify {
+  text-align-last: center;
 }
