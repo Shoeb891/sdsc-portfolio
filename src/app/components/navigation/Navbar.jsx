@@ -18,7 +18,7 @@ const Navbar = () => {
             className="w-28 cursor-pointer"
             src="logo.png"
             alt="Logo"
-            href="#"
+            href="/"
           />
         </div>
         <div
@@ -42,7 +42,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-gray-500">
+              <Link href="/" className="hover:text-gray-500">
                 CONTACT
               </Link>
             </li>
