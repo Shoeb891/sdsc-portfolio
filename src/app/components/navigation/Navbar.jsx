@@ -36,11 +36,11 @@ const Navbar = () => {
                 ABOUT US
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/team" className="hover:text-gray-500">
                 TEAM
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/" className="hover:text-gray-500">
                 CONTACT
